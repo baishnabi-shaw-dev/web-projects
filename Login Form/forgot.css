@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    background-image: url("image1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+:root{
+    --primary-color: white;
+}
+#container{
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    height: 70vh;
+    background:white(0, 0, 0, 0.413);
+    border-radius: 10px;
+    border: 1.5px solid rgb(244, 234, 215);
+    backdrop-filter: blur(4px);
+}
+.login{
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    text-align: left;
+    color: rgba(255, 0, 0, 0.897);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    text-shadow: black 0.2em 0.2em 0.3em;
+}
+p{
+    text-align: left;
+    color: black;
+    margin-left: 5px;
+    font-size: 14px;
+    padding-bottom: 100px;
+}
+#container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 5px 30px;
+}
+input{
+    padding: 15px;
+    border: 1.5px solid rgb(204, 199, 199);
+    border-radius: 5px;
+    font-size: 14px;
+}
+input:focus{
+    outline: none;
+    border: 1.5px solid rgba(51, 0, 255, 0.751);
+}
+button{
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(51, 0, 255, 0.751);
+    color: var(--primary-color);
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(0, 0, 255, 0.897);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(1, 7, 2);
+    font-size: 14px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;    
+}

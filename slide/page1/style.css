@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px;
+  position: relative;
+  z-index: 10;
+}
+.navbar nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+}
+.signup {
+  padding: 8px 16px;
+  border: 1px solid #333;
+  background: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.page {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  padding-inline: 60px;
+}
+
+.hero-text {
+  width: 50%;
+}
+
+.tagline {
+  color: orange;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  max-width: 420px;
+  font-family: 'volkhov', serif;
+  font-weight: 700;
+}
+
+.desc {
+  color: #666;
+  margin-bottom: 30px;
+  max-width: 430px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-primary {
+  background: orange;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-play {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.play-icon {
+  width: 44px;
+  height: 44px;
+  background: #f26440;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  box-shadow: 0 8px 20px rgba(242, 100, 64, 0.35);
+}
+
+.play-text {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+.hero-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 420px;
+  mix-blend-mode: multiply;
+}

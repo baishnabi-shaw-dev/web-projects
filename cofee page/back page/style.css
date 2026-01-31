@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  background: white;
+  display: flex;
+  justify-content: center;
+}
+
+
+.app {
+  width: 390px;
+  min-height: 100vh;
+  background-color: burlywood;
+  padding: 16px;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.service {
+  background-color: burlywood;
+  border-radius: 18px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.service img {
+  width: 140px;
+  height: 140px;        
+  object-fit: cover;  
+  margin-bottom: 8px;
+  border-radius: 16px;
+}
+
+.service h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.destinations {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.card-body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 90px;
+  font-family: 'libre baskerville', serif;
+}
+.card {
+  width: 130%;
+  max-width: 380px;
+  background: transparent;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+}
+.testimonial {
+  width: 100%;
+  text-align: center;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgb(241, 213, 175);
+  color: rgba(255, 255, 255, 0.886);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.testimonial h2 {
+  font-size: 29px;
+  font-weight: 600;
+  color:rgb(59, 17, 17);
+  margin-bottom: 20px;
+  font-family: 'Libre Baskerville', serif;
+}
+.review-box {
+  background: #2c2c2c;
+  padding: 16px;
+  width: 100%;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.review-box p {
+  font-size: 12px;
+  line-height: 1.4;
+  color: whitesmoke;
+}
+
+.review-box h4 {
+  margin-top: 8px;
+  font-size: 12px;
+  color: wheat;
+  font-weight: 600;
+}
+
+.offer-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.offer {
+  background: transparent;
+  padding: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+.offer img {
+  width: 100%;
+  height: 220px;      
+  object-fit: contain; 
+  border-radius: 12px;
+}

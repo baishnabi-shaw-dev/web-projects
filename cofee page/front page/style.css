@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+    gap: 30px;
+}
+a{
+    text-decoration: none;
+    color:white;
+    padding: 3px;
+    border: 2px solid transparent;
+}
+nav a:hover{
+    padding: 3px;
+    border-color: white;
+}
+.hero {
+  height: 55vh;
+  background: url("image1.png") center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  object-fit: contain;
+}
+
+.heading {
+  flex: 1;                      
+  display: flex;
+  justify-content: center;      
+  align-items: center;          
+  color: white;
+}
+.heading h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+p{
+    font-size: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+.pic{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+.view{
+    width: 250px;
+}
+.view img{
+    width: 100%;
+    display: block;
+}
+.demo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    flex-direction: column;
+    gap:12px;
+    align-items: center;
+}
+.title{
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: black;
+}
+.demo-btn{
+    padding: 6px 14px;
+    background: transparent;
+    border: 1px solid black;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.demo-btn:hover{
+    background: black;
+    color:white;
+}
+
+

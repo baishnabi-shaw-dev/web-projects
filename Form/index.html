@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <h4>Employee Complaint Form</h4>
+    </nav>
+    <div id="form">
+    <div id="container">
+    <form class="form-box">
+        <div id="username">
+            <label id="lab"><b>Employee Name</label></b>
+            <div class="name-row">
+    <div class="name-field">
+        <input type="text">
+        <label>First Name</label>
+    </div>
+
+    <div class="name-field">
+        <input type="text">
+        <label>Last Name</label>
+    </div>
+</div>
+        </div>
+        </div>
+        <div>
+            <label for="Eid"><b>Employee Id Number</label></b>
+            <input type="text" id="Eid">
+            <label for="dep"><b>Department</label></b>
+            <input type="text" id="dep">
+            <label for="doi"><b>Date of Incident</label></b>
+            <label for="date"></label>
+            <input type="date" id="date">
+            <label for="nature"><b>Nature of Complaint</label></b>
+
+
+            <div class="radio-box">
+                <input type="radio" name="complaint"> Discrimination
+            </div>
+            <div class="radio-box">
+                <input type="radio" name="complaint"> Conflict with Co-worker
+            </div>
+            <div class="radio-box">
+                <input type="radio" name="complaint"> Workplace Safety Concern</div>
+            </div>
+            <div class="radio-box">
+                <input type="radio" name="complaint"> Harassment
+            </div>
+            <div class="radio-box">
+                <input type="radio" name="complaint"> Other
+            </div>
+            <label for="discription"><b>Description of Incident</label></b>
+            <textarea id="discription"></textarea>
+            <lable class ="acknowledgement">
+            <input type="checkbox">
+            I acknowledge that the information provided in this complaint form is ture and accurate to the best of my knowledge.</label>
+
+            <div class="submit-box">
+    <button type="submit">Submit</button>
+</div>
+        </div>   
+</div>
+    </form>
+</div>
+
+</body>
+</html>

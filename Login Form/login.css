@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    background-image: url("image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login{
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    position: relative;
+    width: 90%;
+    max-width: 300px;
+    height: 60vh;
+    background: rgba(0, 0, 0, 0.413);
+    border-radius: 10px;
+    border: 1.5px solid rgb(244, 234, 215);
+    backdrop-filter: blur(4px);
+}
+:root{
+    --primary-color: white;
+}
+.heading{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 0 0 5px 5px;
+}
+
+.heading::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 36px;
+    height: 30px;
+    background-color: transparent;
+    border-top-right-radius: 50%;
+    box-shadow: 15px 0 0 0 var(--primary-color);
+}
+
+.heading::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 25%;
+    width: 36px;
+    height: 30px;
+    background-color: transparent;
+    border-top-left-radius: 50%;
+    box-shadow: -15px 0 0 0 var(--primary-color);
+}
+.text {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    background: white;
+    border-radius: 10px;
+}
+.text input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+}
+
+.pass {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    background: white;
+    border-radius: 10px;
+}
+.pass input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+}
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px 35px; 
+    font-size: 10px;
+    color: white;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 3px; 
+}
+.options a {
+    margin: 0;
+    white-space: nowrap;
+    text-decoration: none;
+    color: white;
+}
+.form-down{
+    margin-top: 40px;   
+}
+.submit-btn {
+    text-align: center;
+    margin-top: 50px;;
+}
+
+.login-box {
+    text-align: center;
+    margin-top: 25px;
+}
+.login-box {
+    width: 90%;
+    margin: 25px auto 0;
+}
+
+.login-box button {
+    width: 100%;          
+    padding: 14px 0;
+    border: none;      
+    outline: none;        
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+.register-link a {
+    color: white;
+    text-decoration: none;
+}
+
+
