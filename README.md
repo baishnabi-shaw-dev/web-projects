@@ -24,8 +24,8 @@ Each project folder contains:
 
 ## 🛠 Technologies Used
 
-- HTML5  
-- CSS3  
+- HTML   
+- CSS    
 - Flexbox  
 - CSS Grid  
 - Basic Responsive Design  
