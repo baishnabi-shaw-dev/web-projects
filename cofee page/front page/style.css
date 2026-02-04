@@ -3,13 +3,25 @@
     border: 0;
     box-sizing: border-box;
 }
-
+body {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+.app {
+  width: 50%;
+  min-height: 100vh;
+  background-color:transparent;
+  padding: 16px;
+}
 nav{
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     padding: 30px;
     gap: 30px;
+    flex-wrap: wrap; 
 }
 a{
     text-decoration: none;
@@ -17,80 +29,121 @@ a{
     padding: 3px;
     border: 2px solid transparent;
 }
+
 nav a:hover{
-    padding: 3px;
     border-color: white;
 }
+
 .hero {
-  height: 55vh;
+  height: 50vh;
   background: url("image1.png") center / cover no-repeat;
   display: flex;
   flex-direction: column;
-  object-fit: contain;
+  width:100%;
+  overflow: hidden;  
+}
+.heading {
+  flex: 1;
+  display: flex;
+  color: white;
+  flex-wrap: wrap; 
 }
 
-.heading {
-  flex: 1;                      
-  display: flex;
-  justify-content: center;      
-  align-items: center;          
-  color: white;
-}
 .heading h1 {
-  font-size: 50px;
-  text-align: center;
+  font-size: 30px;
+  width: 40%;
   margin-bottom: 10px;
+  margin-left: 10px;
+  max-width: 500px; 
 }
+
 p{
-    font-size: 20px;
+    font-size: 14px;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 10px;
     margin-bottom: 100px;
+    width: 50%;
+    max-width: 550px;   
 }
-.pic{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 40px;
-}
-.view{
-    width: 250px;
-}
-.view img{
+
+.bar {
     width: 100%;
-    display: block;
+    height: 43vh;
+    background-color: wheat;
+    overflow: hidden;
+    position: relative; 
 }
-.demo{
+
+.text {
+    position: absolute;
+    right: 40px;       
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+
+}
+
+.text h2 {
+    color: Text rgb(84, 20, 20);
+    font-size: 40px;
+    margin-bottom: 10px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 12px;
-    flex-direction: column;
-    gap:12px;
-    align-items: center;
-}
-.title{
-    font-size: 10px;
-    font-weight: 800;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: black;
-}
-.demo-btn{
-    padding: 6px 14px;
-    background: transparent;
-    border: 1px solid black;
-    font-size: 11px;
-    font-weight: 700;
-    cursor: pointer;
+    justify-content: center;
 }
 
-.demo-btn:hover{
-    background: black;
-    color:white;
+.text p {
+    color: brown; 
+    font-size: 16px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left; 
 }
 
 
+.pic{
+  width: 100%;
+  position: relative;
+}
+
+.pic img{
+    width: 130px;
+    height: 160px;
+    object-fit: cover;
+    margin-top: 36px;
+    margin-left: 74px;
+    max-width: 100%; 
+    --angle: -6deg;
+    transform: rotate(var(--angle));
+    box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+@media (max-width: 1200px){
+  .app{
+    width: 70%;
+  }
+}
+@media (max-width: 1000px){
+  .app{
+    width: 80%;
+  }
+
+
+@media (max-width: 850px){
+  .app{
+    width: 90%;
+  }
+}
+@media (max-width: 700px){
+  .app{
+    width: 95%;
+  }
+
+  .hero{
+    height: auto;
+  }
+}
